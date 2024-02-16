@@ -10,7 +10,9 @@ AKienaiActor::AKienaiActor()
 void AKienaiActor::BeginPlay()
 {
 	Super::BeginPlay();
+	UKismetSystemLibrary::PrintString(this, message);
 	UKismetSystemLibrary::PrintString(this, "doumo");
+	actor->TestCall();
 }
 
 void AKienaiActor::Tick(float DeltaTime)

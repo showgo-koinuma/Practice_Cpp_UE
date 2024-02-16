@@ -1,4 +1,5 @@
 #include "FirstRiderActor.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 AFirstRiderActor::AFirstRiderActor()
 {
@@ -18,3 +19,7 @@ void AFirstRiderActor::Tick(float DeltaTime)
 
 }
 
+void AFirstRiderActor::TestCall()
+{
+	UKismetSystemLibrary::PrintString(this, "success call");
+}
